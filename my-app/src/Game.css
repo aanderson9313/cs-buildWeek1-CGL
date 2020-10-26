@@ -1,13 +1,54 @@
 .Board {
     position: relative;
     margin: 0 auto;
-    background-color: #000;
+    background-color: rgb(97, 4, 4);
     background-image: 
-    linear-gradient(#333 1px, transparent 1px),
-    linear-gradient(90deg, #333 1px, transparent 1px);
+    linear-gradient(#000 1px, transparent 1px),
+    linear-gradient(90deg,#000 1px, transparent 1px);
 }
 
 .Cell {
-    background: #ccc;
+    background: #f7ff00;
     position: absolute;
+}
+
+.Controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.input {
+    margin: 5px;
+}
+
+.button {
+    box-shadow:inset 0px -3px 7px 0px #360b0b;
+	background:linear-gradient(to bottom, #8a080f 5%, #63002d 100%);
+	background-color:#8a080f;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ebca23;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+    margin-left: 4px;
+
+}
+
+.button:hover {
+    background:linear-gradient(to bottom, #63002d 5%, #8a080f 100%);
+	background-color:#63002d;
+}
+
+.button:active {
+    position:relative;
+	top:1px;
 }

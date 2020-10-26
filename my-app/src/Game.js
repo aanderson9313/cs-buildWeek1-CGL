@@ -180,7 +180,7 @@ class Game extends React.Component{
                 </div>
 
                 <div className = 'Controls'>
-                    Update every <input value = {this.state.interval} onChange = {this.handleIntervalChange} /> msec
+                    <h2>Update every <input className=" input" value = {this.state.interval} onChange = {this.handleIntervalChange} /> msec </h2>
                     {isRunning ?
                         <button className = 'button' onClick = {this.stopGame}>Stop</button> :
                         <button className = 'button' onClick = {this.runGame}>Run</button>

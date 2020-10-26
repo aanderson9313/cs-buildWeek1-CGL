@@ -14,6 +14,7 @@ class App extends Component {
           </h1>
         </div>
         <Game />
+        
       </div>
     );
   }
